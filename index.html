@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thomas Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://file.myfontastic.com/izGUD6orPcNW2ttLa49LC3/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--======================================================
+                     NAVIGATION BAR
+=======================================================-->
+    <nav id="navbar" class="navbarbox">
+        <div class="nav-wrapper">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Information</a></li>
+            <li><a href="index.html">Semester</a></li>
+            <li><a href="index.html">Schedule</a></li>
+            <li class="logout"><a href="login.html">Log out</a></li>
+        </ul>
+    </nav>
+
+    <!--===================================================-->
+
+    <!-- Menu Icon -->
+    <div class="mobileNavbar">
+        <div class="menuIcon">
+            <span class="icon icon-bars"></span>
+            <span class="icon icon-bars overlay"></span>
+        </div>
+        <div class="menuIcon_back">
+            <a class="back"><img src="images/back.png" id="back" class="mobile_icon"> </a>
+        </div>
+        <div class="search_top">
+            <a class="search_btn_top"><img src="images/search.png" class="search_icon_top"> 
+                <p class="search_text_top">Search</p>
+            </a>
+        </div>
+        <a class="mail"><img src="images/mail.png" id="mail" class="mobile_icon"> </a>
+        <a class="chat"><img src="images/chat.png" id="chat" class="mobile_icon"> </a>
+        <a class="logo_mobile"><img src="images/kealogowt.png" class="mobile_icon"> </a>
+
+    </div>
+
+
+
+
+    <div class="overlay-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Information</a></li>
+            <li><a href="index.html">Semester</a></li>
+            <li><a href="index.html">Schedule</a></li>
+            <li class="logout"><a href="login.html">Log out</a></li>
+        </ul>
+    </div>
+
+    <!--====================================================== 
+                     FRONT PAGE
+======================================================-->
+    <div class="container">
+        <div class="chat_box">
+
+            <div class="students_messages">
+                <div class="box-top ">
+                    <a id="ms" class="messages_students_btn">Messages</a>
+                    <a class="all_students_btn">All students</a>
+                </div>
+                <div class="messages_students">
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/alex.png" alt="mail_icon" class="mail_picture">  <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Alex Piwko</p>
+                        <p class="chat_text ">Hey, are you going to moonbar? Today is ... </p>
+                        <p class="chat_time ">21:59</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/ivana.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name read">Ivana</p>
+                        <p class="chat_text read">Thank you for attending our kea …</p>
+                        <p class="chat_time read">14:32</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/viki.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name read">Viktor</p>
+                        <p class="chat_text read">Thank you for attending our kea …</p>
+                        <p class="chat_time read">11:29</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/tabea.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name ">Tabea</p>
+                        <p class="chat_text ">Thank you for attending our kea …</p>
+                        <p class="chat_time ">9:04</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/misa.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Miša</p>
+                        <p class="chat_text ">Thank you for attending our kea …</p>
+                        <p class="chat_time ">Tue</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/alex.png" alt="mail_icon" class="mail_picture">  <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Alex Piwko</p>
+                        <p class="chat_text ">Hey, are you going to moonbar? Today is ...</p>
+                        <p class="chat_time ">21:59</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/ivana.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name read">Ivana</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">14:32</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/viki.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name read">Viktor</p>
+                        <p class="chat_text read">Thank you for attending our kea …</p>
+                        <p class="chat_time read">11:29</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/tabea.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name ">Tabea</p>
+                        <p class="chat_text ">Thank you for attending our kea …</p>
+                        <p class="chat_time ">9:04</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/misa.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Miša</p>
+                        <p class="chat_text ">Thank you for attending our kea …</p>
+                        <p class="chat_time ">Tue</p>
+                    </a>
+                </div>
+
+                <div class="all_students">
+                    <img class="alphabet" src="images/alphabet.png" alt="alphabet">
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture">  </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity none" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity none" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity none" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity none" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity none" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity none" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/alex.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alex Piwko</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                </div>
+            </div>
+
+            <div class="teachers_messages">
+                <div class="box-top">
+                    <a class="messages_teachers_btn">Messages</a>
+                    <a class="all_teachers_btn">All teachers</a>
+                </div>
+
+                <div class="messages_teachers">
+                    <a class="message_1">
+                        <div class="picture "><img src="images/k.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Kenny Marek Møller</p>
+                        <p class="chat_text ">Thank you for attending our kea cup…</p>
+                        <p class="chat_time ">21:59</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/a.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name read">Alan Engelhardt</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">14:32</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name read">Jonas Haxø</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">11:29</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/i.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name ">Ida Winberg Hemmingsen</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">9:04</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/j.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Jens Stanek</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">Tue</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/k.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Kenny Marek Møller</p>
+                        <p class="chat_text ">Thank you for attending our kea cup…</p>
+                        <p class="chat_time ">21:59</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/a.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"></div>
+                        <p class="chat_name read">Alan Engelhardt</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">14:32</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name read">Jonas Haxø</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">11:29</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/i.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name ">Ida Winberg Hemmingsen</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">9:04</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/j.png" alt="mail_icon" class="mail_picture"><img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Jens Stanek</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">Tue</p>
+                    </a>
+                </div>
+
+                <div class="all_teachers">
+                    <img class="alphabet" src="images/alphabet.png" alt="alphabet">
+                    <a class="message_1">
+                        <div class="picture"><img src="images/a.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alan Engelhardt</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Ida Winberg Hemmingsen</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Jens Stanek</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/k.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Kenny Marek Møller</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/a.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alan Engelhardt</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Ida Winberg Hemmingsen</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Jens Stanek</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/k.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Kenny Marek Møller</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/a.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Alan Engelhardt</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Ida Winberg Hemmingsen</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/j.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Jens Stanek</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                    <a class="message_1">
+                        <div class="picture"><img src="images/k.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="all_students_name">Kenny Marek Møller</p>
+                        <img class="activity" src="images/active.png" alt="active">
+                    </a>
+                </div>
+            </div>
+
+            <div class="groups_messages">
+                <div class="box-top">
+                    <a class="messages_groups_btn">Messages</a>
+                    <a class="create_group_btn">Create a group</a>
+                </div>
+
+                <div class="messages_groups">
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/group_pic.png" alt="mail_icon" class="mail_picture"> <img
+                                src="images/active.png" alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Blue state of mind</p>
+                        <p class="chat_text ">Hey guys, when can we meet to discuss next...? </p>
+                        <p class="chat_time ">21:59</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name read">Group 5</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">14:32</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name read">Group 2</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">11:29</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name ">Group 10</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">9:04</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Group 8</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">Tue</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/group_pic.png" alt="mail_icon" class="mail_picture"> <img
+                                src="images/active.png" alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Blue state of mind</p>
+                        <p class="chat_text ">Hey guys, when can we meet to discuss next...? </p>
+                        <p class="chat_time ">21:59</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name read">Group 5</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">14:32</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name read">Group 2</p>
+                        <p class="chat_text read">Thank you for attending our kea…</p>
+                        <p class="chat_time read">11:29</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> </div>
+                        <p class="chat_name ">Group 10</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">9:04</p>
+                    </a>
+                    <a class="message_1 ">
+                        <div class="picture "><img src="images/g.png" alt="mail_icon" class="mail_picture"> <img src="images/active.png"
+                                alt="active" class="chat_active"> </div>
+                        <p class="chat_name ">Group 8</p>
+                        <p class="chat_text ">Thank you for attending our kea…</p>
+                        <p class="chat_time ">Tue</p>
+                    </a>
+                </div>
+                <div class="create_group">
+                    <h1>COMING SOON</h1>
+                </div>
+            </div>
+
+            <div class="box-bottom">
+                <a class="students">
+                    <div class="chat_icons_bottom"><img src="images/students-r.png" class="chat_icons_img"> </div>Students
+                </a>
+                <a class="teachers">
+                    <div class="chat_icons_bottom"><img src="images/teacher-r.png" class="chat_icons_img"> </div>Teachers
+                </a>
+                <a class="groups">
+                    <div class="chat_icons_bottom"><img src="images/groups-r.png" class="chat_icons_img"> </div>Groups
+                </a>
+            </div>
+        </div>
+        <div class="mail_box">
+            <div class="mails">
+                <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title">WiseFlow</p>
+                    <p class="mails_subject">KEA Sport</p>
+                    <p class="mails_text">Thank you for attending the our kea…</p>
+                    <p class="day">Monday</p>
+                    <div class="favourite"><img src="images/fav_empty.png" alt="favourite" class="mail_favourite"> </div>
+                </a>
+                <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title read gc">WiseFlow</p>
+                    <p class="mails_subject read gc">KEA Sport</p>
+                    <p class="mails_text read gc">Thank you for attending our kea…</p>
+                    <p class="day read gc">Monday</p>
+                    <div class="favourite"><img src="images/fav_empty.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title">WiseFlow</p>
+                    <p class="mails_subject">KEA Sport</p>
+                    <p class="mails_text">Thank you for attending the our kea…</p>
+                    <p class="day">Monday</p>
+                    <div class="favourite"><img src="images/fav_empty.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title read gc">WiseFlow</p>
+                    <p class="mails_subject read gc">KEA Sport</p>
+                    <p class="mails_text read gc">Thank you for attending the our kea…</p>
+                    <p class="day read gc">Monday</p>
+                    <div class="favourite"><img src="images/fav_full.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title">WiseFlow</p>
+                    <p class="mails_subject">KEA Sport</p>
+                    <p class="mails_text">Thank you for attending the our kea…</p>
+                    <p class="day">Monday</p>
+                    <div class="favourite"><img src="images/fav_empty.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title read gc">WiseFlow</p>
+                    <p class="mails_subject read gc">KEA Sport</p>
+                    <p class="mails_text read gc">Thank you for attending the our kea…</p>
+                    <p class="day read gc">Monday</p>
+                    <div class="favourite"><img src="images/fav_full.png" alt="favourite" class="mail_favourite"> </div>
+                </a>
+                <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title read gc">WiseFlow</p>
+                    <p class="mails_subject read gc">KEA Sport</p>
+                    <p class="mails_text read gc">Thank you for attending the our kea…</p>
+                    <p class="day read gc">Monday</p>
+                    <div class="favourite"><img src="images/fav_empty.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title">WiseFlow</p>
+                    <p class="mails_subject">KEA Sport</p>
+                    <p class="mails_text">Thank you for attending the our kea…</p>
+                    <p class="day">Monday</p>
+                    <div class="favourite"><img src="images/fav_empty.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title read gc">WiseFlow</p>
+                    <p class="mails_subject read gc">KEA Sport</p>
+                    <p class="mails_text read gc">Thank you for attending the our kea…</p>
+                    <p class="day read gc">Monday</p>
+                    <div class="favourite"><img src="images/fav_full.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title">WiseFlow</p>
+                    <p class="mails_subject">KEA Sport</p>
+                    <p class="mails_text">Thank you for attending the our kea…</p>
+                    <p class="day">Monday</p>
+                    <div class="favourite"><img src="images/fav_empty.png" alt="favourite" class="mail_favourite"> </div>
+                </a> <a class="message_1">
+                    <div class="picture"><img src="images/mail_icon.png" alt="mail_icon" class="mail_picture"> </div>
+                    <p class="mails_title read gc">WiseFlow</p>
+                    <p class="mails_subject read gc">KEA Sport</p>
+                    <p class="mails_text read gc">Thank you for attending the our kea…</p>
+                    <p class="day read gc">Monday</p>
+                    <div class="favourite"><img src="images/fav_full.png" alt="favourite" class="mail_favourite"> </div>
+                </a>
+            </div>
+
+            <div class="mail_box-bottom">
+                <div class="dots">
+                    <img src="images/dots.png" class="dots_icon"> 
+                </div>
+                <div class="mail_title">
+                    <p>Inbox</p>
+                </div>
+                <div class="newmail">
+                    <img src="images/newmail.png" class="newmail_icon"> 
+                </div>
+            </div>
+        </div>
+
+        <div class="mainpage">
+            <h1 class="news_heading">NEWS</h1>
+            <div class="news">
+                <h2 class="news_title">EXAM period - extended open hours</h2>
+                <p class="news_text">During the exam period, many of you will
+                    need to work longer at one of the KEA
+                    campuses.
+
+                    From now until 31st January 2019:
+                    Lygten 16
+                    Weekdays: 07:30 - 02:00
+                    Weekends: CLOSED</p>
+            </div>
+            <div class="news">
+                <h2 class="news_title">EXAM period - extended open hours</h2>
+                <p class="news_text">During the exam period, many of you will
+                    need to work longer at one of the KEA
+                    campuses.
+
+                    From now until 31st January 2019:
+                    Lygten 16
+                    Weekdays: 07:30 - 02:00
+                    Weekends: CLOSED</p>
+            </div>
+            <div class="news">
+                <h2 class="news_title">EXAM period - extended open hours</h2>
+                <p class="news_text">During the exam period, many of you will
+                    need to work longer at one of the KEA
+                    campuses.
+
+                    From now until 31st January 2019:
+                    Lygten 16
+                    Weekdays: 07:30 - 02:00
+                    Weekends: CLOSED</p>
+            </div>
+        </div>
+        <script src="js/myscript.js"></script>
+    </div>
+</body>
+
+</html>

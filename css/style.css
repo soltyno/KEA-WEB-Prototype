@@ -1,0 +1,981 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: 'Helvetica Neue LT Std';
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('../Helvetica/HelveticaNeueLT-Condensed.otf');
+}
+
+.none{
+  display: none;
+}
+
+.container {
+  max-width: 640px !important;
+  padding-top: 65px;
+}
+
+
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: #ea5045;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.animation-slideTop {
+  transform: translate(-50%, -150%);
+  transition: 1s;
+}
+
+.login {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+}
+
+.login-btn{
+  cursor: pointer;
+}
+
+.username,
+.password {
+  display: flex;
+  padding: 30px 0 5px 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  width: 100%;
+}
+
+.username-input,
+.password-input {
+  margin: 0;
+  padding: 0 0 0 15px;
+  background-color: rgb(255, 255, 255, 0);
+  width: 75%;
+  font-size: 16px;
+  color: white;
+  outline: none;
+}
+
+.login-btn {
+
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 150px;
+  height: 60px;
+  background-color: white;
+  color: #ea5045;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.icon {
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 15%;
+  text-align: center;
+}
+
+.fa-password {
+  background-image: url("../image/.password.png");
+}
+
+
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+
+
+.boxsh {
+  box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.44);
+}
+
+img {
+  width: 100%;
+}
+
+.br {
+  border: 1px solid red;
+}
+
+.bg {
+  border: 1px solid green;
+}
+
+/*======================================================
+                          Navbar
+  ======================================================*/
+@media(min-width: 640px) {
+  #navbar {
+
+    color: white;
+    position: absolute;
+    top: 0;
+    height: 70px;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 10;
+    background: #ea5045;
+  }
+
+}
+
+.nav-wrapper {
+
+  text-align: center;
+  width: 70%;
+}
+
+@media(max-width: 768px) {
+  .nav-wrapper {
+    width: 90%;
+  }
+}
+
+@media(max-width: 638px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+}
+
+#navbar ul {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  /* margin-right: 14px; */
+  margin-top: -2px;
+  text-align: right;
+  transition: transform 0.5s ease-out;
+}
+
+@media(max-width: 640px) {
+  #navbar ul {
+    display: none;
+  }
+}
+
+@media(orientation: landscape) {
+  #navbar ul {
+    display: inline-block;
+  }
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  color: white;
+  display: block;
+  font-size: 0.7em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+#navbar li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: white;
+  transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+#navbar li a:before,
+#navbar li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: white;
+}
+
+#navbar li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+#navbar li a:after {
+  background: white;
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+#navbar li a:hover:before {
+  background: rgb(154, 154, 154);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#navbar li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+
+
+
+
+/*======================================================
+                    Mobile Menu NAVBAR
+  ======================================================*/
+
+.menuIcon {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 23px;
+  width: 25px;
+  z-index: 12;
+}
+
+.mobileNavbar {
+  color: white;
+  top: 0;
+  height: 65px;
+  width: 100vw;
+  z-index: 10;
+  background: #ea5045;
+  position: fixed;
+}
+
+.mobileNavbar a {
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  height: 100%;
+}
+
+.mobileNavbar a.logo_mobile {
+  float: left;
+}
+
+.mobile_icon {
+  cursor: pointer;
+  height: 100%;
+  width: auto;
+}
+
+.logo_mobile {
+  cursor: pointer;
+  height: 100%;
+  width: auto;
+  padding: 15px 0;
+  padding-left: 70px;
+}
+
+.mail {
+  padding: 20px 15px;
+  margin: 0;
+}
+
+.chat {
+  padding: 16px 15px;
+}
+
+.chat:hover {
+  background-color: white;
+}
+
+.mail:hover {
+  background-color: white;
+}
+
+/*======================================================
+                    Mobile Menu Menu Icon
+  ======================================================*/
+
+/* Icon Bars */
+
+
+
+.icon-bars {
+  background: white;
+  position: absolute;
+  left: 1px;
+  top: 45%;
+  height: 3px;
+  width: 25px;
+  transition: 0.4s;
+}
+
+.icon-bars::before {
+  background: white;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  height: 3px;
+  width: 25px;
+  transition: 0.3s width 0.4s;
+}
+
+.icon-bars::after {
+  margin-top: 0px;
+  background: white;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 3px;
+  width: 25px;
+  transition: 0.3s width 0.4s;
+}
+
+/* Bars Shadows */
+.icon-bars.overlay {
+  background: #ffc9c5;
+  width: 25px;
+  animation: middleBar 3s infinite 0.5s;
+}
+
+@keyframes middleBar {
+  0% {
+    width: 0px
+  }
+
+  50% {
+    width: 25px
+  }
+
+  100% {
+    width: 0px
+  }
+}
+
+
+.icon-bars.overlay::before {
+  background: #ffc9c5;
+  width: 10px;
+  animation: topBar 3s infinite 0.2s;
+}
+
+@keyframes topBar {
+  0% {
+    width: 0px
+  }
+
+  50% {
+    width: 10px
+  }
+
+  100% {
+    width: 0px
+  }
+}
+
+
+.icon-bars.overlay::after {
+  background: #ffc9c5;
+  width: 15px;
+  animation: bottomBar 3s infinite 1s;
+}
+
+@keyframes bottomBar {
+  0% {
+    width: 0px
+  }
+
+  50% {
+    width: 18px
+  }
+
+  100% {
+    width: 0px
+  }
+}
+
+
+
+/* Toggle Menu Icon */
+.menuIcon.toggle .icon-bars {
+  top: 5px;
+  transform: translate3d(0, 5px, 0) rotate(135deg);
+  transition-delay: 0.1s;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.menuIcon.toggle .icon-bars::before {
+  top: 0;
+  transition-delay: 0.1s;
+  opacity: 0;
+}
+
+.menuIcon.toggle .icon-bars::after {
+  top: 10px;
+  transform: translate3d(0, -10px, 0) rotate(-270deg);
+  transition-delay: 0.1s;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.menuIcon.toggle .icon-bars.overlay {
+  width: 20px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+
+
+/*======================================================
+                    CHAT MOBILE VERSION
+  ======================================================*/
+.chat_box {
+  display: none;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 90vh;
+  z-index: 5;
+}
+
+.box-top {
+  display: grid;
+  grid-template-areas: 'box1 box2';
+  grid-template-columns: 50% 50%;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 12;
+}
+
+.box-top a {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  line-height: 45px;
+  font-size: 16px;
+  color: rgb(107, 107, 107);
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0.5px 0.5px 2px 0px rgba(0, 0, 0, 0.39);
+}
+
+.box-top a.messages_students_btn, .box-top a.messages_teachers_btn , .box-top a.messages_groups_btn {
+  background-color: white;
+} 
+
+.messages {
+  grid-area: box1;
+}
+
+.all {
+  grid-area: box2;
+}
+
+
+.box-bottom {
+  background-color: white;
+  display: grid;
+  grid-template-areas: 'box1 box2 box3';
+  height: 90px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  box-shadow: 1px 0px 2px 0px rgba(0, 0, 0, 0.39);
+  z-index: 5;
+}
+
+.box-bottom a {
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ea5045;
+  cursor: pointer;
+}
+
+.students {
+  grid-area: box1;
+  filter: opacity(100%);
+}
+
+.teachers {
+  grid-area: box2;
+  filter: opacity(40%);
+}
+
+.groups {
+  grid-area: box3;
+  filter: opacity(40%);
+}
+
+.chat_icons_bottom {
+  width: 100%;
+  height: 55px;
+  padding: 15px 20px;
+  padding-bottom: 0;
+}
+
+.chat_icons_img {
+  height: 100%;
+  width: auto;
+}
+
+.teachers_messages,
+.groups_messages {
+  width: 100%;
+  display: none;
+  z-index: 5;
+}
+
+.students_messages {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  background-color: white;
+}
+
+.messages_students, .messages_teachers, .messages_groups{
+  width: 100%;
+  padding-top: 60px;
+  margin: 0;
+}
+
+.messages_students a, .messages_teachers a, .messages_groups a {
+  display: grid;
+  height: 75px;
+  padding-top: 10px 0px;
+  grid-template-areas: "pic chat_name chat_time"
+                       "pic chat_text chat_text";
+  grid-template-columns: 23% 52% 25%;
+  color: black;
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.185);
+}
+
+.chat_name {
+  padding-top: 15px;
+  grid-area: chat_name;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.chat_time {
+  grid-area: chat_time;
+  text-align: right;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-weight: 600;
+}
+
+.chat_text {
+  grid-area: chat_text;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.chat_active{
+  width: 18px;
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+}
+
+/*======================================================
+                   ALL STUDENTS
+  ======================================================*/
+
+  .all_students, .all_teachers{
+    width: 100%;
+    padding-top: 65px;
+    margin: 0;
+  }
+  
+  .all_students a, .all_teachers a{
+    display: grid;
+    height: 70px;
+    padding-top: 10px 0px;
+    grid-template-areas: "pic all_students_name activity";
+    grid-template-columns: 23% 61% 16%;
+    color: black;
+  }
+  
+  .activity{
+    padding-top: 20px;
+    width: 15px;
+  }
+  
+  .alphabet{
+    position: fixed;
+    right: 10px;
+    padding-top: 10px;
+    height: 440px;
+    width: auto;
+  }
+  
+  .all_students_name{
+    padding-top: 16px;
+    padding-left: 15px;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+ .create_group h1{
+   padding: 0;
+   color: #ea5045;
+   font-size: 60px;
+   font-weight: 900;
+  transform: rotate(-45deg);
+ }
+
+ .create_group{
+   background-color: white;
+   padding-top: 250px;
+   text-align: center;
+   z-index: 20;
+ }
+
+
+
+/*======================================================
+                  MAIL MOBILE VERSION
+  ======================================================*/
+
+.mail_box {
+  display: none;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 90vh;
+  z-index: 5;
+  background-color: white;
+}
+
+.mail_box-bottom {
+  background-color: white;
+  display: grid;
+  grid-template-areas: 'box1 box2 box3';
+  grid-template-columns: 25% 50% 25%;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  box-shadow: 1px 0px 2px 0px rgba(0, 0, 0, 0.39);
+  z-index: 5;
+}
+
+.dots {
+  grid-area: box1;
+}
+
+.maiL_title {
+  grid-area: box2;
+  text-align: center;
+}
+
+
+.newmail {
+  grid-area: box3;
+  text-align: center;
+  margin: auto;
+}
+
+
+.dots_icon {
+  width: 100px;
+  height: auto;
+  padding: 30px 25px;
+}
+
+.newmail_icon {
+  width: 35px;
+}
+
+.mail_title p {
+  text-align: center;
+  grid-area: area2;
+  font-size: 21px;
+  line-height: 70px;
+  font-weight: 900;
+  color: #ea5045;
+  cursor: pointer;
+}
+
+.mails {z-index: 5;background-color: white;}
+
+.mails a {
+  display: grid;
+  height: 100px;
+  grid-template-areas: "pic title day day"
+    "pic subject subject fav"
+    "pic maiL_text maiL_text fav";
+  grid-template-columns: 23% 47% 15% 15%;
+  color: black;
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.185);
+}
+
+.picture {
+  grid-area: pic;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.mails_title {
+  padding-top: 15px;
+  grid-area: title;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.day {
+  grid-area: day;
+  text-align: right;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-weight: 600;
+}
+
+.favourite {
+  grid-area: fav;
+  text-align: center;
+  margin: auto;
+}
+
+.mails_text {
+  grid-area: maiL_text;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.mails_subject {
+  grid-area: subject;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0;
+  padding-top: 5px;
+}
+
+
+.mail_picture {
+  width: 55px;
+}
+.mail_favourite{
+  width: 25px;
+}
+
+.read {
+  font-weight: 100;
+  color: rgb(48, 48, 48);
+}
+
+.gc {
+  color: rgb(48, 48, 48);
+}
+
+
+/*======================================================
+                  MAIL AND CHAT
+  ======================================================*/
+
+
+.menuIcon_back {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 26px;
+  top: 20px;
+  height: 28px;
+  width: auto;
+  z-index: 12;
+}
+
+.search_icon_top {
+  width: 20px;
+  grid-area: area1;
+}
+
+.search_text_top {
+  grid-area: area2;
+  padding-top: 1px;
+  padding-left: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+}
+
+.search_btn_top {
+  display: grid;
+  grid-template-areas: 'area1 area2';
+  grid-template-columns: 20% 50%;
+}
+
+.search_top {
+  float: left;
+  display: none;
+  cursor: pointer;
+  height: 100%;
+  width: auto;
+  padding: 25px 0;
+  padding-left: 100px;
+}
+
+/*======================================================
+                  MAIL AND CHAT
+  ======================================================*/
+
+.mainpage{
+  padding: 15% 5%;
+}
+
+.news_heading{
+  width: 100px;
+  border-bottom: 3px solid #ea5045;
+  color: #ea5045;
+}
+
+.news{
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.13);
+  color: black;
+  margin-top: 40px;
+}
+
+.news_title{
+  background-color: #243247;
+  color: white;
+  padding: 5%;
+  font-size: 20px;
+}
+
+.news_text{
+  padding: 5%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*======================================================
+                   Responsive Mobile Menu 
+  ======================================================*/
+.overlay-menu {
+  background: #243247;
+  color: white;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  padding-left: 35px;
+  padding-top: 25%;
+  transform: translateX(-120%);
+  width: 80%;
+  height: 100%;
+  transition: transform 0.2s ease-out;
+  z-index: 2;
+}
+
+.overlay-menu ul,
+.overlay-menu li {
+  display: block;
+  position: relative;
+  width: auto;
+}
+
+.overlay-menu ul{
+  position: relative;
+  height: 100%;
+}
+
+.overlay-menu li a {
+  display: block;
+  font-size: 21px;
+  letter-spacing: 4px;
+  /*   opacity: 0; */
+  padding: 10px 0;
+  text-align: left;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+
+
+
+/* Animated Bottom Line */
+.overlay-menu li a:before,
+.overlay-menu li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: rgb(42, 42, 42);
+}
+
+.overlay-menu li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+.overlay-menu li a:after {
+  background: white;
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+.overlay-menu li a:hover:before {
+  background: rgb(154, 154, 154);
+  width: 60%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.overlay-menu li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+
+.overlay-menu li.logout{
+  position: absolute;
+  bottom: 30px;
+}
