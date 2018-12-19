@@ -51,6 +51,8 @@ const allteachers = document.querySelector(".all_teachers");
 const messteachers = document.querySelector(".messages_teachers");
 const allstudents = document.querySelector(".all_students");
 const messgroups = document.querySelector(".messages_groups");
+const close_btn = document.querySelector(".close");
+const close_group_btn = document.querySelector(".close_group");
 
 messages_students_btn.addEventListener("click", messages_students);
 messages_teachers_btn.addEventListener("click", messages_teachers);
@@ -59,11 +61,14 @@ all_students_btn.addEventListener("click", all_students);
 all_teachers_btn.addEventListener("click", all_teachers);
 create_group_btn.addEventListener("click", create_group);
 
-allteachers.addEventListener("click", create_group);
-allstudents.addEventListener("click", create_group);
-messteachers.addEventListener("click", create_group);
-messstudents.addEventListener("click", create_group);
-messgroups.addEventListener("click", create_group);
+close_btn.addEventListener("click", close_new);
+close_group_btn.addEventListener("click", close_group);
+
+allteachers.addEventListener("click", show_new);
+allstudents.addEventListener("click", show_new);
+messteachers.addEventListener("click", show_new);
+messstudents.addEventListener("click", show_new);
+messgroups.addEventListener("click", show_group_chat);
 
 students_btn.addEventListener("click", show_students);
 teachers_btn.addEventListener("click", show_teachers);
@@ -234,9 +239,29 @@ function create_group() {
     document.querySelector('.messages_groups_btn').style.background = "rgb(238, 238, 238)";
     document.querySelector('.create_group_btn').style.background = "white";
 
-    document.querySelector('.create_group').style.display = "block";
+    document.querySelector('.create_group').style.display = "grid";
     document.querySelector('.messages_groups').style.display = "none";
     show_groups();
+}
+
+function show_new() {
+    document.querySelector('.new').style.display = "block";
+    document.querySelector('.chat_box').style.display = "none";
+}
+
+function show_group_chat() {
+    document.querySelector('.group_chat').style.display = "block";
+    document.querySelector('.chat_box').style.display = "none";
+}
+
+function close_new() {
+    document.querySelector('.new').style.display = "none";
+    document.querySelector('.chat_box').style.display = "block";
+}
+
+function close_group() {
+    document.querySelector('.group_chat').style.display = "none";
+    document.querySelector('.chat_box').style.display = "block";
 }
 
 
